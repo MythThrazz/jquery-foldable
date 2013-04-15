@@ -1,33 +1,25 @@
 /*
- *@author Marcin Dudek
+ * jquery.foldable.js (https://github.com/MythThrazz/jquery-foldable)
+ * @author Marcin Dudek
+ * @version 1.0
+ *
+ * Copyright (c) 2013 Marcin Dudek aka MythThrazz (https://github.com/MythThrazz)
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-//    var defaultOptions = {
-//        event: 'click', /* event which fires the folding effect */
-//        hideText: 'Fold', /* folding button text */
-//        showText: 'Unfold', /* unfolding button text */
-//        titleWrapper: '<h2/>', /* folding block's wrapper element */
-//        titleText: undefined, /* folding block's title */
-//        titleSearchSelector: 'h1,h2,h3,h4,h5,h6', /* folding block's title selector */
-//        defaultFold: false, /* if the blocks have to be folded initially */
-//        showTime: 100, /* time of the animation showing the title of the folding block */
-//        hideTime: 'fast', /* time of the animation hiding the title of the folding block */
-//        animationTime: 'slow' /* animation time */
-//    };
-
-(function($, undefined) {
+(function($) {
 
     var defaultOptions = {
-        event: 'click', /* nazwa zdarzenia odpalającego zwijanie */
-        hideText: 'Zwiń', /* tekst przycisku zwijającego */
-        showText: 'Rozwiń', /* tekst przycisku rozwijającego */
-        titleWrapper: '<h2/>', /* wrapper tytułu dla zwijalnego bloku */
-        titleText: undefined, /* tekst tytułu zwijalnego bloku */
-        titleSearchSelector: 'h1,h2,h3,h4,h5,h6', /* selektor tytułu dla zwijalnego bloku */
-        defaultFold: false, /* czy bloki domyślnie zwinięte */
-        showTime: 100, /* czas animacji pokazującej tytuł zwijalnego bloku */
-        hideTime: 'fast', /* czas animacji ukrywającej tytuł zwijalnego bloku */
-        animationTime: 'slow' /* czas animacji slide */
+        event: 'click', /* event which fires the folding effect */
+        hideText: 'Fold', /* folding button text */
+        showText: 'Unfold', /* unfolding button text */
+        titleWrapper: '<h2/>', /* folding block's wrapper element */
+        titleText: undefined, /* folding block's title */
+        titleSearchSelector: 'h1,h2,h3,h4,h5,h6', /* folding block's title selector */
+        defaultFold: false, /* if the blocks have to be folded initially */
+        showTime: 100, /* time of the animation showing the title of the folding block */
+        hideTime: 'fast', /* time of the animation hiding the title of the folding block */
+        animationTime: 'slow' /* animation time */
     };
 
     var api = {

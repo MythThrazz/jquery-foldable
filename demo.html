@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Foldable DEMO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="jquery.foldable.css" />
+        <script type="text/javascript" src="jquery.js" ></script>
+        <script type="text/javascript" src="jquery.foldable.js" ></script>
+        <script>
+            $(function() {
+                $(document).ready(function() {
+                    $('.foldable').foldable();
+                });
+            });
+        </script>
+        <style>
+            .wrapper{
+                max-width: 900px;
+                background-color: #F0F0F0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="foldable">
+                <h1>Foldable #1</h1>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="foldable">
+                <h2>Foldable #2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet
+                </p>
+            </div>
+            <div class="foldable">
+                <h3>Foldable #3</h3>
+                <div>
+                    <span>
+                        Lorem ipsum dolor sit amet
+                    </span>
+                </div>
+            </div>
+            <div class="foldable">
+                <h4>Foldable #4</h4>
+                <p>
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
